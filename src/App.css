@@ -28,3 +28,8 @@
 body {
     background: var(--black-x);
 }
+
+main {
+    height: 100vh;
+    margin-left: 25vw;
+}
