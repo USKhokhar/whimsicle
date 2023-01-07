@@ -1,0 +1,13 @@
+@mixin flex($dir, $jC, $aI, $aC, $gap){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jC;
+    align-items: $aI;
+    align-content: $aC;
+    gap: $gap;
+}
+
+// animation mixin
+@mixin animate($animation,$duration,$method,$times){
+    animation: $animation $duration $method $times;
+}

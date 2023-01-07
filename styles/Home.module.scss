@@ -1,0 +1,37 @@
+@import './base/reset';
+@import './layouts/intro';
+@import './base/typography';
+@import './base/buttons';
+@import './layouts/block';
+
+// breakpoints
+$mobile: '320px';
+$tablet: '768px'; 
+$small-laptop: '1024px'; 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: $small-laptop){
+  *{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: $tablet){
+  *{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: $mobile){
+  *{
+    font-size: 12px;
+  }
+}
+

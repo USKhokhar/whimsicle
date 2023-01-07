@@ -1,0 +1,20 @@
+.cool-btn{
+    font: normal 400 1rem/1rem $shadow;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+     box-shadow: 
+    0.2rem 0.2rem 0 0 $black-x,
+    inset 0.2rem 0.2rem 0 0 $black;
+  
+  &:hover {
+    color: $white;
+    box-shadow: 
+      0 0 0 0 $black,
+      inset 6em 3.5em 0 0 $black-x;
+  }
+}
