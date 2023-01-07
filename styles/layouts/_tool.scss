@@ -1,0 +1,7 @@
+@import '../base/mixins';
+
+.tool-section{
+    // @include flex(row, center, center, center, 1rem); 
+    flex-direction: row !important;
+    flex-wrap: wrap;
+}

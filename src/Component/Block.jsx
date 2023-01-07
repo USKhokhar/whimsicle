@@ -1,14 +1,16 @@
 import React from 'react'
 
-const Block = ({ title, emoji }) => {
+const Block = ({ title, emoji, handleClick }) => {
   return (
-    <button className='cool-btn block'>
+    <button className='cool-btn block'
+      onClick={handleClick}
+    >
         <span className="emoji-head">
           {emoji} 
         </span>
-        <sub>
+        <h3>
           {title}
-        </sub>
+        </h3>
     </button>
   )
 }
