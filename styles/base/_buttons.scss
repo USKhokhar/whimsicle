@@ -18,3 +18,22 @@
       inset 6em 3.5em 0 0 $black-x;
   }
 }
+
+
+.wow-btn{
+    font: normal 400 1.3rem/1.5rem $shadow;
+    border: 1px solid $black-x;
+    background: $black-x;
+    color: $white;
+    padding: 0.2rem 0.3rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover{
+      border: 0.7px solid $black-x;
+      border-radius: 0;
+      background: none;
+      color: $black;
+    }
+}

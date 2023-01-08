@@ -1,9 +1,11 @@
 import React, {useState} from 'react'
 import { useQuery } from 'react-query'
+import { useNavigate } from 'react-router-dom';
 
 const randomNumber = Math.floor(Math.random() * 10);
 
 const QuotePage = () => {
+    const navigate = useNavigate()
     const [count, setCount] = useState(randomNumber);
     const fetchData = async () => {
         const res = await fetch('https://type.fit/api/quotes')
@@ -41,6 +43,9 @@ const QuotePage = () => {
 
             <button className="cool-btn" onClick={newQuoteClick}>
                 🔂 
+            </button>
+            <button className="cool-btn" onClick={() => navigate('/Home')}>
+                🏠 Home
             </button>
         </section>
     </main>

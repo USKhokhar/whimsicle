@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { useQuery } from 'react-query';
+import { useNavigate } from 'react-router-dom';
 
 const randomNumber = Math.floor(Math.random() * 3);
 
 const MemeGenerator = () => {
+    const navigate = useNavigate()
+
     const MemeApi = async () => {
         const res =  await fetch('https://meme-api.com/gimme');
         return res.json()
@@ -25,7 +28,9 @@ const MemeGenerator = () => {
         <section className="intro-section">
             
             <img className='meme-img' src={data.preview[randomNumber]} alt="meme" />
-
+            <button className="cool-btn" onClick={() => navigate('/Home')}>
+                🏠 Home
+            </button>
         </section>
     </main>
   )
