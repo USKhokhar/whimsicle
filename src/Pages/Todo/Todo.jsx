@@ -10,10 +10,6 @@ const Todo = () => {
             <sub>Time To Be Productive!</sub>
             <TodoInput />
             <TodoItem task={'Task'} />
-            <TodoItem task={'Task'} />
-            <TodoItem task={'Task'} />
-            <TodoItem task={'Task'} />
-            <TodoItem task={'Task'} />
         </section>
     </main>
   )

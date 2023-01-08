@@ -1,0 +1,26 @@
+.loader{
+    // border: 1px solid $black;
+    width: 10rem;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner{
+    // border: 1px solid $black;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border-top: 0.2rem solid $black-x;
+    animation: spin 2s  infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

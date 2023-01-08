@@ -7,6 +7,7 @@
         border: 1px solid $black;
         padding: 0.1rem 0.5rem;
         font: normal 400 1rem/1.2rem $shadow;
+        letter-spacing: 0.1rem;
         transition: 300ms;
 
         &:focus{
@@ -20,8 +21,4 @@
 
 .todo-item{
     @include flex(row, center, center, center, 1rem)
-}
-
-.checked{
-    text-decoration: line-through;
 }

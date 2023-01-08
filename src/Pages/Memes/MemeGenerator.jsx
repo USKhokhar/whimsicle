@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useQuery } from 'react-query';
 import { useNavigate } from 'react-router-dom';
+import Error from '../Error';
+import Loader from '../Loader';
 
 const randomNumber = Math.floor(Math.random() * 3);
 
@@ -15,12 +17,13 @@ const MemeGenerator = () => {
     const {status, data} = useQuery('meme', MemeApi)
     
     if(status === 'loading'){
-        return <h1>...LOADING</h1>
+        return <Loader />
+    }
+
+    if(status === 'error'){
+        return <Error />
     }
     
-    if(status === 'error'){
-        return <h1>ERROR</h1>
-    }
 
   return (
     <main>

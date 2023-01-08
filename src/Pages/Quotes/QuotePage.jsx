@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import { useQuery } from 'react-query'
 import { useNavigate } from 'react-router-dom';
+import Loader from '../Loader';
+import Error from '../Error';
 
 const randomNumber = Math.floor(Math.random() * 10);
 
@@ -15,11 +17,11 @@ const QuotePage = () => {
     const {status, data} = useQuery('quote', fetchData)
 
     if(status === 'loading'){
-        return <h1>...LOADING...</h1>
+        return <Loader />
     }
 
     if(status === 'error'){
-        return <h1>...ERROR...</h1>
+        return <Error />
     }
     
 
