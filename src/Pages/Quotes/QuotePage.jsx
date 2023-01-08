@@ -4,6 +4,7 @@ import { useQuery } from 'react-query'
 const randomNumber = Math.floor(Math.random() * 10);
 
 const QuotePage = () => {
+    const [count, setCount] = useState(randomNumber);
     const fetchData = async () => {
         const res = await fetch('https://type.fit/api/quotes')
         return res.json()
@@ -18,13 +19,9 @@ const QuotePage = () => {
     if(status === 'error'){
         return <h1>...ERROR...</h1>
     }
-
     
-    const [count, setCount] = useState(randomNumber);
 
     const newQuoteClick = () => {
-        setCount(randomNumber+1)
-        console.log('clicked')
         setCount(count+1)
     }
 
