@@ -21,7 +21,7 @@
 
 
 .wow-btn{
-    font: normal 400 1.3rem/1.5rem $shadow;
+    font: normal 400 1rem/1.5rem $shadow;
     border: 1px solid $black-x;
     background: $black-x;
     color: $white;
@@ -29,6 +29,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: 300ms;
+    @include flex(row, center, center, center, 0);
 
     &:hover{
       border: 0.7px solid $black-x;

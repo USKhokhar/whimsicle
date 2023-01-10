@@ -1,0 +1,73 @@
+
+
+// import React, { useRef, useState } from 'react'
+// import { useNavigate } from 'react-router-dom'
+
+// const Todo = () => {
+
+//   const navigate = useNavigate()
+
+//   const [isAdd, setIsAdd] = useState(false)
+//   // const [todo, setTodo] = useState([])
+//   const data = localStorage.getItem('task')
+//   const todo = data ? JSON.parse(data) : []
+//   const todoRef = useRef();
+
+//   const addList = (item) => {
+//     return <h3>{item}</h3>
+//   }
+
+//   const handleAddTodo = (e) => {
+//     const input = todoRef.current.value;
+//     if(input === '') return null
+//     console.log(input);
+//     todo.push(input)
+//     // setIsAdd(true)
+//     localStorage.setItem('task', JSON.stringify(todo));
+//     // addList(tasks[0])
+//     setIsAdd(true)
+//     console.log(isAdd);
+//     // setTodo({task: input})
+//     // console.log({...todo});
+//     todoRef.current.value = ''
+//     // setIsAdd(false)
+//   }
+  
+//   const tasks = JSON.parse(localStorage.getItem('task'))
+//   const handleDeleteAll = () => {
+//     localStorage.clear()
+//   }
+
+
+  
+
+//   return (
+//     <main>
+//         <h1 style={{color: '#ffffff', textAlign: 'center'}}>Whimsicle 🌪 </h1>  
+//         <section className="intro-section">
+//             <sub>Time To Be Productive!</sub>
+//             <div className='input-form'>
+//               <input type="text" name="todo-input" id="todo-input" ref={todoRef} placeholder='Enter Your Task Buddy'/>
+//               <button className="wow-btn" onClick={handleAddTodo}>
+//                   ➕
+//               </button>
+//               <button className="wow-btn" onClick={handleDeleteAll}>
+//                   🗑
+//               </button>
+//             </div>
+//             <ol>
+//               <li>
+//                 {
+//                   isAdd ? (tasks.map((task) => addList(task))) : null
+//                 }
+//               </li>
+//             </ol>
+//             <button className="cool-btn" onClick={() => navigate('/Home')}>
+//                 🏠 Home
+//             </button>
+//         </section>
+//     </main>
+//   )
+// }
+
+// export default Todo
