@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Todo = () => {
 
+  const navigate = useNavigate()
   const localData = localStorage.getItem('TASK_ITEM_LOCAL')
   const [task, setTask] = useState(localData ? JSON.parse(localData) : [])
   const [isChecked, setIsChecked] = useState(false)
@@ -54,6 +56,10 @@ const Todo = () => {
           })
         }
       </ol>
+
+      <button className="cool-btn" onClick={() => navigate('/Home')}>
+                🏠 Home
+            </button>
       </section>
     </main>
   )
