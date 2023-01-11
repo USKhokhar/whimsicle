@@ -1,0 +1,24 @@
+.notes-container{
+    @include flex(row, center, center, center, 1rem);
+    flex-wrap: wrap;
+}
+
+.note{
+    width: 5rem;
+    aspect-ratio: 1;
+    // background: #000;
+    border: 1px solid $black-x;
+    border-radius: 4px;
+    background: #d3d3d3;
+    transition: 200ms;
+    padding: 0.2rem 0.3rem;
+    h3{
+        cursor: zoom-in;
+    }
+    &:hover{
+        background: #d3d3d398;
+        border: 1.5px solid $black;
+        border-radius: 0;
+    }
+}
+

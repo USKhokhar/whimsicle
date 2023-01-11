@@ -7,6 +7,8 @@
 @import './base/image';
 @import './layouts/todo';
 @import './layouts/loader';
+@import './layouts/notes';
+
 // breakpoints
 $mobile: '320px';
 $tablet: '768px'; 
@@ -17,7 +19,16 @@ $small-laptop: '1024px';
   padding: 0;
   box-sizing: border-box;
   font-size: 20px;
-  overflow: hidden;
+}
+
+main{
+  overflow: hidden !important;
+}
+
+.intro-section{
+  // overflow: scroll !important;
+  // max-height: 60vh;
+  max-height: 80vh;
 }
 
 @media screen and (max-width: $small-laptop){

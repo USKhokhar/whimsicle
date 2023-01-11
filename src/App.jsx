@@ -7,6 +7,8 @@ import Intro from './Pages/Intro'
 import QuotePage from './Pages/Quotes/QuotePage'
 import MemeGenerator from './Pages/Memes/MemeGenerator'
 import Todo from './Pages/Todo/Todo'
+import NotesPage from './Pages/Notes/NotesPage'
+import Game from './Pages/TicTacToe/Game'
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path='/Quotes' element={<QuotePage />} />
           <Route path='/Memes' element={<MemeGenerator />} />
           <Route path='/Todo' element={<Todo />} />
+          <Route path='/Notes' element={<NotesPage />} />
+          <Route path='/Tictactoe' element={<Game />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </main>
