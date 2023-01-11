@@ -20,7 +20,7 @@ const Todo = () => {
   }
 
   const handleDeleteAll = () => {
-    localStorage.clear()
+    localStorage.clear('TASK_ITEM_LOCAL')
     window.location.reload()
   }
 
@@ -58,8 +58,8 @@ const Todo = () => {
       </ol>
 
       <button className="cool-btn" onClick={() => navigate('/Home')}>
-                🏠 Home
-            </button>
+        🏠 Home
+      </button>
       </section>
     </main>
   )
