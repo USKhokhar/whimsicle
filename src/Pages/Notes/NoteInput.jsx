@@ -39,6 +39,7 @@ const NoteInput = () => {
 
         title.current.value = ''
         text.current.value = ''
+
     }
 
     useEffect(() => {

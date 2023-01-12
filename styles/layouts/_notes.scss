@@ -1,6 +1,14 @@
 .notes-container{
     @include flex(row, center, center, center, 1rem);
+    max-height: 15rem;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-top: 10rem;
+
+    ::-webkit-scrollbar-thumb{
+        width: 1rem;
+    }
 }
 
 .note{
@@ -12,10 +20,9 @@
     background: #d3d3d3;
     transition: 200ms;
     padding: 0.2rem 0.3rem;
-    h3{
-        cursor: zoom-in;
-    }
+    word-wrap: break-word;
     &:hover{
+        cursor: zoom-in;
         background: #d3d3d398;
         border: 1.5px solid $black;
         border-radius: 0;

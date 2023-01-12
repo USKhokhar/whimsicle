@@ -10,6 +10,8 @@ const NotesPage = () => {
     navigate('/takenote')
   }
 
+  const noteTitle = JSON.parse(localStorage.getItem('LOCAL_NOTE_TITLE'))
+
   return (
     <main>
         <h1 style={{color: '#ffffff', textAlign: 'center'}}>Whimsicle 🌪 </h1>  
@@ -22,10 +24,20 @@ const NotesPage = () => {
             </div>
 
             <div className="notes-container">
-              {/* <div className="note">
-                <h3>Lorem ipsum dolor sit.</h3>
-              </div> */}
+              {
+                noteTitle.map((note) => {
+                  return(
+                    <div className="note">
+                      <h3>{note}</h3>
+                    </div>
+                  )
+                })
+              }
             </div>
+
+            <button className="cool-btn" onClick={() => navigate('/Home')}>
+              🏠 Home
+            </button>
         </section>
     </main>
   )
