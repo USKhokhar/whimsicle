@@ -10,6 +10,7 @@ import Todo from './Pages/Todo/Todo'
 import NotesPage from './Pages/Notes/NotesPage'
 import Game from './Pages/TicTacToe/Game'
 import NoteInput from './Pages/Notes/NoteInput'
+import TranslatePage from './Pages/Translate/TranslatePage'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/Notes' element={<NotesPage />} />
           <Route path='/takenote' element={<NoteInput />} />
           <Route path='/Tictactoe' element={<Game />} />
+          <Route path='/translate' element={<TranslatePage />} />
           <Route path='*' element={<Error />} />
         </Routes>
       </main>

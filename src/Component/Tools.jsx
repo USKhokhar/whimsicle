@@ -39,6 +39,12 @@ const ToolArr =[
         emoji:' 🖌 ',
         navigate: '/draw'
     },
+    {
+        id: 7,
+        title: 'Translate',
+        emoji:' 🔁 ' ,
+        navigate: '/translate'
+    },
 ]
 
 const Tools = () => {
